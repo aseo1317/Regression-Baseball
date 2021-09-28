@@ -11,10 +11,12 @@ This first plot shows a simple linear relationship between hits allowed and runs
 
 Hits allowed was the first feature that I immediately wanted to examine because it is the most obvious (and often quickest) way to score runs. I next wanted to look at two other ways that result in getting on base: walks and errors. As seen above, these two plots aren't nearly as good predictors for runs as hits. 
 
-While individually they may not prove to be strong predictors of runs, walks and errors still provide value to the model in conjunction with hits. The R^2 when walks is added as a feature increases to 0.833 and then to 0.835 with Errors. 
+While individually they may not prove to be strong predictors of runs, walks and errors still provide value to the model in conjunction with hits. The R^2 when walks is added as a feature increases to 0.833 and then to 0.835 with Errors.
+
+My initial instincts seem to be pointing me in the right direction. However, there are many features still to test and the R^2 can definitely be improved. The first feature I intend to look at is slugging % (the total number of bases a player records per at-bat (hits only)) as this is a more robust version of hits. 
 
 Next Steps:
 - I need to take the next step in my modeling by coming up with a train/test/validation scheme (I most likely intend to use cross-validation).
-- On first glance (and subject matter) I don't know if extensive feature engineering is necessary but will take a second look
+- On first glance (and subject matter) I don't know if extensive feature engineering is necessary but will take a second look. 
 - Regularization to find optimal alpha/lambda
 - Test and Interpret 
