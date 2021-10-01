@@ -13,18 +13,18 @@ The datasets were all collected from Baseball Reference, an expansive database o
 
 ## Algorithms
 
-_Feature Engineering_
+**_Feature Engineering_**
 1. This could be considered Step 0 in a way, but I immediately removed some data that were irrelevant (Name/Team) or would exhibit multicollinearity (regular ERA, Win Probability Added).
 2. Used correlation heatmaps and pairplots to further identify features that exhibited multicollinearity. 
 3. Looked at pairplots and added transformed features and interaction features. 
 4. Trained and scored on step 3 to determine effect on accuracy of model.
 5. Performed steps 3 and 4 numerous times. 
 
-### Models
+**_Models_**
 
 Simple linear regression was used to set a baseline. K-fold cross validation was used to repeatedly tweak this baseline to optimize the model. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
 
-### Model Findings 
+**_Model Findings_**
 
 Baseline: 
 - R^2: 0.4790833346759704
