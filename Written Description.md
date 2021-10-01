@@ -20,6 +20,7 @@ _Feature Engineering_
 5. Performed steps 3 and 4 numerous times. 
 
 _Models_
+
 Simple linear regression was used to set a baseline. K-fold cross validation was used to continously tweak this baseline to raise the score. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
 
 _Model Findings_ 
