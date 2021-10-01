@@ -22,25 +22,25 @@ The datasets were all collected from Baseball Reference, an expansive database o
 
 **_Models_**
 
-Simple linear regression was used to set a baseline. K-fold cross validation was used to repeatedly tweak this baseline to optimize the model. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
+Simple linear regression was used to set a baseline. K-fold cross validation was used to repeatedly tweak this baseline to optimize the model. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection. The findings are seen below. Despite LassoCV performing slightly better on both metrics, I determined Ridge might be a more appropriate model to look at. This is because of the subject matter as most of these features cannot be "zeroed out" in a real world context. Ridge was also superior to Linear Regression as it allowed me to analyze the feature coefficients on a similar scale due to standardization.
 
 **_Model Findings_**
 
 Baseline: 
-- R^2: 0.4790833346759704
-- MAE: 24.29058669707774
+- R^2: 0.479
+- MAE: 24.29
 
 Linear Regression:
-- R^2: 0.5443644201777438
-- MAE: 22.96626622448453
+- R^2: 0.544
+- MAE: 22.97
 
 Lasso:
-- R^2: 0.5703002423914983
-- MAE: 18.629114139703088
+- R^2: 0.57
+- MAE: 18.63
 
 Ridge: 
-- R^2: 0.5368909357157498
-- MAE: 19.607274120303252
+- R^2: 0.537
+- MAE: 19.61
 
 ## Tools
 - Baseball Reference website for providing necessary statistics
