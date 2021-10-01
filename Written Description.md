@@ -12,6 +12,7 @@ I focused on keeping features which had the most correlation with the target var
 The datasets were all collected from Baseball Reference, an expansive database of baseball statistics. My features mainly came from the Advanced Pitching page while my target and some supplemental features came from the Standard Pitching page. Each row simply lists the player, his team and age, and a variety of numerical pitching metrics. The data collected was from this 2021 season. I felt it was appropriate to use this year's data because the season is almost finished (about 3 games left) and more appropriate than using last year's, which was a shortened 60 game season. 
 
 ## Algorithms
+
 _Feature Engineering_
 1. This could be considered Step 0 in a way, but I immediately removed some data that were irrelevant (Name/Team) or would exhibit multicollinearity (regular ERA, Win Probability Added).
 2. Used correlation heatmaps and pairplots to further identify features that exhibited multicollinearity. 
@@ -19,11 +20,11 @@ _Feature Engineering_
 4. Trained and scored on step 3 to determine effect on accuracy of model.
 5. Performed steps 3 and 4 numerous times. 
 
-_Models_
+### Models
 
 Simple linear regression was used to set a baseline. K-fold cross validation was used to repeatedly tweak this baseline to optimize the model. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
 
-_Model Findings_ 
+### Model Findings 
 
 Baseline: 
 - R^2: 0.4790833346759704
