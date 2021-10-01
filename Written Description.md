@@ -21,21 +21,25 @@ _Feature Engineering_
 
 _Models_
 
-Simple linear regression was used to set a baseline. K-fold cross validation was used to continously tweak this baseline to raise the score. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
+Simple linear regression was used to set a baseline. K-fold cross validation was used to repeatedly tweak this baseline to optimize the model. When I determined I had done as much feature engineering as possible, I used LassoCV and RidgeCV to check for overfitting and a final optimization (if existed) to the model. Using all three of simple, LassoCV, and RidgeCV also influenced model selection
 
 _Model Findings_ 
 
-R^2 of baseline: 0.4790833346759704
-MAE of baseline: 24.29058669707774
+Baseline: 
+- R^2: 0.4790833346759704
+- MAE: 24.29058669707774
 
-R^2 of Linear Regression: 0.5443644201777438
-MAE of Linear Regression: 22.96626622448453
+Linear Regression:
+- R^2: 0.5443644201777438
+- MAE: 22.96626622448453
 
-R^2 on Lasso: 0.5703002423914983
-MAE on Lasso: 18.629114139703088
+Lasso:
+- R^2: 0.5703002423914983
+- MAE: 18.629114139703088
 
-R^2 on Ridge: 0.5368909357157498
-MAE on Ridge: 19.607274120303252
+Ridge: 
+- R^2: 0.5368909357157498
+- MAE: 19.607274120303252
 
 ## Tools
 - Baseball Reference website for providing necessary statistics
